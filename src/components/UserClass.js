@@ -35,16 +35,16 @@ class UserClass extends React.Component {
   render() {
     const { name, location, avatar_url, company, bio } = this.state.userInfo;
     return (
-      <div className="user-cart">
-        <h1 style={{ textAlign: "Center" }}>
+      <div className="p-3 m-3 border-2 w-1/4 border-emerald-400 shadow-xl">
+        <h1>
           This is coming from Class based Component
         </h1>
-        <img src={avatar_url} />
-        <h2>Name: {name}</h2>
-        <h3>Location: {location}</h3>
-        <h3>Company: {company}</h3>
+        <img className="w-80" src={avatar_url} />
+        <h2 className="font-bold">Name: {name}</h2>
+        <h3 className="font-bold">Location: {location}</h3>
+        <h3 className="font-bold"> {company}</h3>
         <h3>Contact: anshu.possible@gmail.com</h3>
-        <p>BIO:{bio}</p>
+        <p className="break-words mt-1">BIO:{bio}</p>
       </div>
     );
   }

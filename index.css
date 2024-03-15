@@ -1,4 +1,8 @@
-.root {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* .root {
   color: red;
 }
 .header {
@@ -53,7 +57,6 @@
   flex-wrap: wrap;
 }
 .filter-btn {
-  /* background-color: #6420AA; */
   border: none;
   color: #6420aa;
   padding: 5px 10px;
@@ -150,4 +153,4 @@
   padding: 10px;
   border: 1px solid black;
   width: 45%;
-}
+} */

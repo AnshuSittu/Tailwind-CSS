@@ -8,9 +8,9 @@ class About extends React.Component {
   }
   render() {
     return (
-      <div>
-        <h1>About Class Component</h1>
-        <h2>This is Namste Food App</h2>
+      <div className="m-2 p-2">
+        <h1 className="text-xl font-semibold">About Class Component</h1>
+        <h2 className="text-xl font-semibold">This is Namste Food App</h2>
         <UserClass name={"First"} location="Pune" />
       </div>
     );

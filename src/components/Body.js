@@ -52,19 +52,19 @@ const Body = () => {
   return ListOfRestaurant.length === 0 ? (
     <Shimmer />
   ) : (
-    <div className="body">
-      <div className="filter">
-        <div className="search">
+    <div className="body container-md mx-auto max-sm">
+      <div className="flex justify-between">
+        <div className="search m-2 p-2">
           <input
             type=" text"
-            className="search-box"
+            className="border border-solid border-black rounded-md hover:border-green-500"
             value={searchText}
             onChange={(e) => {
               setSearchText(e.target.value);
             }}
           />
           <button
-            className="btn-search"
+            className="px-4 py-1 text-white shadow-lg rounded-lg bg-green-500 m-4 "
             onClick={() => {
               // filter the restraunt cards and update the UI
               // searchText
@@ -80,8 +80,9 @@ const Body = () => {
             Search
           </button>
         </div>
+        <div className="m-4 p-4 flex items-center">
         <button
-          className="filter-btn"
+          className=" px-4 py-2 text-white shadow-lg rounded-lg bg-green-500"
           onClick={() => {
             // filter logic here
 
@@ -93,8 +94,9 @@ const Body = () => {
         >
           Top Rated Restaurant
         </button>
+        </div>
       </div>
-      <div className="res-container">
+      <div className="flex flex-wrap">
         {filteredRestaurant.map((restaurant) => (
           <Link
             key={restaurant.info.id}
